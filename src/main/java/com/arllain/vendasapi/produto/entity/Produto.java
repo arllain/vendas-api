@@ -1,4 +1,4 @@
-package com.arllain.vendasapi.domain.entity;
+package com.arllain.vendasapi.produto.entity;
 
 import lombok.*;
 

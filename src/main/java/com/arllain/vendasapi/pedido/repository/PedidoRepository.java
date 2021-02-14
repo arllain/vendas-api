@@ -1,7 +1,7 @@
-package com.arllain.vendasapi.domain.repository;
+package com.arllain.vendasapi.pedido.repository;
 
-import com.arllain.vendasapi.domain.entity.Cliente;
-import com.arllain.vendasapi.domain.entity.Pedido;
+import com.arllain.vendasapi.cliente.entity.Cliente;
+import com.arllain.vendasapi.pedido.entity.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Set;

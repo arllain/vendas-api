@@ -1,5 +1,6 @@
-package com.arllain.vendasapi.domain.entity;
+package com.arllain.vendasapi.cliente.entity;
 
+import com.arllain.vendasapi.pedido.entity.Pedido;
 import lombok.*;
 
 import javax.persistence.*;
