@@ -19,6 +19,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -73,6 +74,18 @@ public class ClienteServiceTest {
         Assertions.assertThat(cliente).isNotNull();
 
         Assertions.assertThat(cliente.getId()).isNotNull().isEqualTo(expectedId);
+    }
+
+    @Test
+    @DisplayName("Test should throws BadRequestException when cliente not found")
+    public void throwBadRequestException_when_Cliente_not_found(){
+
+        BDDMockito.when(clienteRepositoryMock.findById(ArgumentMatchers.anyLong()))
+                .thenReturn(Optional.empty());
+
+        Assertions.assertThatExceptionOfType(ResponseStatusException.class)
+                .isThrownBy(() -> clienteService.findById(1L));
+
     }
 
     @Test
