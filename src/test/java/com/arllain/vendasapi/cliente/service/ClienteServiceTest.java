@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 @ExtendWith(SpringExtension.class)
+@DisplayName("Tests for Cliente Service")
 public class ClienteServiceTest {
 
     @InjectMocks

@@ -25,6 +25,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.List;
 
 @ExtendWith(SpringExtension.class)
+@DisplayName("Tests for Cliente Controller")
 public class ClienteControllerTest {
 
     @InjectMocks
