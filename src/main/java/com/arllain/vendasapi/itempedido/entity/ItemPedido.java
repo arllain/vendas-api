@@ -13,6 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
+@Builder
 @Entity
 @Table(name = "item_pedido")
 public class ItemPedido implements Serializable {
@@ -20,7 +21,7 @@ public class ItemPedido implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "pedido_id")

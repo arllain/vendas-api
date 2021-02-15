@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
+@Builder
 @Entity
 @Table(name = "produto")
 public class Produto implements Serializable {
@@ -19,7 +20,7 @@ public class Produto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "descricao")
     private String descricao;
