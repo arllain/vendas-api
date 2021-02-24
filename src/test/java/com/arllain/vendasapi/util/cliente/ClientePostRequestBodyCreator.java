@@ -1,4 +1,4 @@
-package com.arllain.vendasapi.util;
+package com.arllain.vendasapi.util.cliente;
 
 import com.arllain.vendasapi.cliente.requests.ClientePostRequestBody;
 
