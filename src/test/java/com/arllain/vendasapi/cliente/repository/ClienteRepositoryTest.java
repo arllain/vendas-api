@@ -1,7 +1,7 @@
 package com.arllain.vendasapi.cliente.repository;
 
 import com.arllain.vendasapi.cliente.entity.Cliente;
-import com.arllain.vendasapi.util.ClienteCreator;
+import com.arllain.vendasapi.util.cliente.ClienteCreator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

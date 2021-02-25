@@ -5,7 +5,6 @@ import com.arllain.vendasapi.cliente.mapper.ClienteMapper;
 import com.arllain.vendasapi.cliente.repository.ClienteRepository;
 import com.arllain.vendasapi.cliente.requests.ClientePostRequestBody;
 import com.arllain.vendasapi.cliente.requests.ClientePutRequestBody;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

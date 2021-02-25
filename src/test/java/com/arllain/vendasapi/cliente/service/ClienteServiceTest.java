@@ -3,9 +3,9 @@ package com.arllain.vendasapi.cliente.service;
 
 import com.arllain.vendasapi.cliente.entity.Cliente;
 import com.arllain.vendasapi.cliente.repository.ClienteRepository;
-import com.arllain.vendasapi.util.ClienteCreator;
-import com.arllain.vendasapi.util.ClientePostRequestBodyCreator;
-import com.arllain.vendasapi.util.ClientePutRequestBodyCreator;
+import com.arllain.vendasapi.util.cliente.ClienteCreator;
+import com.arllain.vendasapi.util.cliente.ClientePostRequestBodyCreator;
+import com.arllain.vendasapi.util.cliente.ClientePutRequestBodyCreator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

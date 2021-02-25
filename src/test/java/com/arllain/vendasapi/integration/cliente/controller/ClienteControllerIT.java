@@ -3,8 +3,8 @@ package com.arllain.vendasapi.integration.cliente.controller;
 import com.arllain.vendasapi.cliente.entity.Cliente;
 import com.arllain.vendasapi.cliente.repository.ClienteRepository;
 import com.arllain.vendasapi.cliente.requests.ClientePostRequestBody;
-import com.arllain.vendasapi.util.ClienteCreator;
-import com.arllain.vendasapi.util.ClientePostRequestBodyCreator;
+import com.arllain.vendasapi.util.cliente.ClienteCreator;
+import com.arllain.vendasapi.util.cliente.ClientePostRequestBodyCreator;
 import com.arllain.vendasapi.wrapper.PageableResponse;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -19,7 +19,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.annotation.DirtiesContext;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureTestDatabase
